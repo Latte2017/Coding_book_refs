@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Chapter5">
       <UniqueIdentifier>{43e2d97d-ea5c-45a8-a17d-ea3a2e4acdcc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter9">
+      <UniqueIdentifier>{520677de-6b88-492e-a330-3c7c808006a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1_1.cpp">
@@ -131,6 +134,21 @@
     </ClCompile>
     <ClCompile Include="5_1.cpp">
       <Filter>Source Files\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_2.cpp">
+      <Filter>Source Files\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_3.cpp">
+      <Filter>Source Files\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="9_1.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_2.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_3.cpp">
+      <Filter>Source Files\Chapter9</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
