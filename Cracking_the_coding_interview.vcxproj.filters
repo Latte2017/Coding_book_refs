@@ -150,5 +150,8 @@
     <ClCompile Include="9_3.cpp">
       <Filter>Source Files\Chapter9</Filter>
     </ClCompile>
+    <ClCompile Include="9_4.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
