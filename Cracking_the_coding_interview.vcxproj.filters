@@ -31,6 +31,9 @@
     <Filter Include="Source Files\Chapter9">
       <UniqueIdentifier>{520677de-6b88-492e-a330-3c7c808006a9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter11">
+      <UniqueIdentifier>{114c012d-a381-4fa1-ae27-89a77a58b0b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1_1.cpp">
@@ -153,5 +156,49 @@
     <ClCompile Include="9_4.cpp">
       <Filter>Source Files\Chapter9</Filter>
     </ClCompile>
+    <ClCompile Include="9_5.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_6.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_7.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_8.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_9.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_10.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="9_11.cpp">
+      <Filter>Source Files\Chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="11_1.cpp">
+      <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="11_2.cpp">
+      <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="11_3.cpp">
+      <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="11_5.cpp">
+      <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="11_6.cpp">
+      <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="11_7.cpp">
+      <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Missing.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
