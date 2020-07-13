@@ -34,6 +34,9 @@
     <Filter Include="Source Files\Chapter11">
       <UniqueIdentifier>{114c012d-a381-4fa1-ae27-89a77a58b0b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter17">
+      <UniqueIdentifier>{dd39de14-f813-4122-8d8b-3b7c607df49d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1_1.cpp">
@@ -194,6 +197,36 @@
     </ClCompile>
     <ClCompile Include="11_7.cpp">
       <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="11_8.cpp">
+      <Filter>Source Files\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="17_1.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_2.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_5.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_3.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_4.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_6.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_7.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_8.cpp">
+      <Filter>Source Files\Chapter17</Filter>
+    </ClCompile>
+    <ClCompile Include="17_13.cpp">
+      <Filter>Source Files\Chapter17</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
