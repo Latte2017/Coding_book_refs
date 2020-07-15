@@ -31,7 +31,7 @@ private:
 	int val =0;
 	enum_suits s1;
 public:
-	const virtual enum_suits GetSuit() {
+	enum_suits GetSuit() {
 		return s1;
 	}
 
@@ -53,10 +53,10 @@ public:
 
 class Deck:public Cards {
 private:
-	vector<Cards*> num_cards[52];
+	static vector<Cards*> num_cards;
 	static int num_of_spades, num_of_diamonds, num_of_hearts, num_of_clubs;
 public:
-	virtual Cards*  Card(int vl, enum_suits suits) {
+	virtual Cards*  Card(int val, enum_suits suits) {
 		if (suits == enum_suits::CLUB){
 			if (num_of_clubs <= 0) {
 				return nullptr;
@@ -89,14 +89,13 @@ public:
 				num_of_spades--;
 			}
 		}
-		num_cards->push_back(Cards::Card(vl, suits));
-		
+		num_cards.push_back(Cards::Card(val, suits));
 	}
 	
 	
 };
 
-
+vector<Cards*> Deck::num_cards;
 int Deck::num_of_clubs = 13;
 int Deck::num_of_diamonds = 13;
 int Deck::num_of_hearts = 13;
@@ -115,12 +114,13 @@ public:
 		return 10;
 	}
 
+	/*
 	const virtual enum_suits GetSuit() {
 		return Deck::GetSuit();
 	}
-
+	*/
 	BlackJackCard(int val, enum_suits suit) {
-		
+		Deck::Card(val, suit);
 	};
 
 	virtual void SetVal(int val) {
@@ -136,7 +136,7 @@ private:
 	set<int> points;
 	vector<BlackJackCard*> black_jack_player_cards;
 	void GetCard() {
-		int card_val = rand() % 13;
+		int card_val = rand()% 13 + 1 ;
 		enum_suits set_suit = enum_suits(rand() % 4);
 		auto black_jack_card = new BlackJackCard(card_val, set_suit);
 		if (points.empty() and black_jack_card->GetVal() == 1 ) {
@@ -151,8 +151,9 @@ private:
 	}
 
 public:
-	Player() {
+	Player(int id) {
 		//Player gets 2 cards in the beginning
+		this->id = id;
 		GetCard();
 		GetCard();
 	}
@@ -174,6 +175,9 @@ public:
 		return player_score;
 	}
 
+	int GetID() {
+		return id;
+	}
 
 	virtual ~Player() {
 		for (auto it = black_jack_player_cards.begin(); it != black_jack_player_cards.end(); ++it) {
@@ -187,25 +191,49 @@ class BlackJack {
 private:
 	int num_of_players = 0;
 	vector<Player*> players;
-
+	int winner= -1, winning_score = 0;
 	void Hit(Player* p1) {
 		p1->AddCard();
 	}
-public:
-	int StartGame(int num_of_players) {
-		//dealer is the last
-		for (auto it = 0; it < num_of_players+1; ++it) {
-			players.push_back(new Player());
+
+	int PlayGame() {
+
+		for (auto it = players.begin(); it != players.end(); ++it) {
+			while ((*it)->GetScore() < 17) {
+				(*it)->AddCard();
+			}
 		}
+
+		for (auto it = players.begin(); it != players.end(); ++it) {
+			int curr_score = (*it)->GetScore();
+			if (curr_score < 21 and curr_score > winning_score) {
+				winner = (*it)->GetID();
+				winning_score = (*it)->GetScore();
+			}
+		}
+		return winner;
+	}
+
+	void StartGame() {
+		//dealer is the last
+		for (auto it = 0; it < num_of_players + 1; ++it) {
+			players.push_back(new Player(it+1));
+		}
+	}
+public:
+
+	BlackJack(int num_players) {
+		this->num_of_players = num_players;
 	}
 
 	
-
-
-
+	int Play() {
+		StartGame();
+		return PlayGame();
+	}
 };
 
 int main() {
-	BlackJackCard b1(13, enum_suits::CLUB);
-	enum_suits suit =  b1.GetSuit();
+	BlackJack game1(5);
+	int winner = game1.Play();
 }
