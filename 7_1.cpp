@@ -35,9 +35,8 @@ public:
 		return s1;
 	}
 
-	const virtual int GetVal() {
-		return val;
-	}
+	const virtual int GetVal() = 0;
+	
 
 	virtual Cards*  Card(int val, enum_suits suit1) {
 		this->val = val;
@@ -48,6 +47,7 @@ public:
 	void virtual SetVal(int val) {
 		this->val = val;
 	}
+
 };
 
 
@@ -114,19 +114,9 @@ public:
 		return 10;
 	}
 
-	/*
-	const virtual enum_suits GetSuit() {
-		return Deck::GetSuit();
-	}
-	*/
 	BlackJackCard(int val, enum_suits suit) {
 		Deck::Card(val, suit);
 	};
-
-	virtual void SetVal(int val) {
-		Cards::SetVal(val);
-	}
-	
 };
 
 class Player {
