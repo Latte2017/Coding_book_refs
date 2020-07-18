@@ -35,7 +35,9 @@ public:
 		return s1;
 	}
 
-	const virtual int GetVal() = 0;
+	const virtual int GetVal() {
+		return val;
+	}
 	
 
 	virtual Cards*  Card(int val, enum_suits suit1) {
@@ -91,8 +93,6 @@ public:
 		}
 		num_cards.push_back(Cards::Card(val, suits));
 	}
-	
-	
 };
 
 vector<Cards*> Deck::num_cards;
@@ -122,7 +122,7 @@ public:
 class Player {
 private:
 	int id;
-	float bet;
+	static float bet;
 	set<int> points;
 	vector<BlackJackCard*> black_jack_player_cards;
 	void GetCard() {
@@ -141,11 +141,12 @@ private:
 	}
 
 public:
-	Player(int id) {
+	Player(int id, float bet) {
 		//Player gets 2 cards in the beginning
 		this->id = id;
 		GetCard();
 		GetCard();
+		this->bet += bet;
 	}
 
 	vector<BlackJackCard*> GetAllCards() {
@@ -154,6 +155,10 @@ public:
 
 	void AddCard() {
 		GetCard();
+	}
+
+	float GetBet() {
+		return bet;
 	}
 
 	int GetScore() {
@@ -176,17 +181,15 @@ public:
 	}
 };
 
+float Player::bet = 0.0;
 
 class BlackJack {
 private:
 	int num_of_players = 0;
 	vector<Player*> players;
 	int winner= -1, winning_score = 0;
-	void Hit(Player* p1) {
-		p1->AddCard();
-	}
-
-	int PlayGame() {
+	float amount = 0.0;
+	pair<int, int> PlayGame() {
 
 		for (auto it = players.begin(); it != players.end(); ++it) {
 			while ((*it)->GetScore() < 17) {
@@ -199,15 +202,18 @@ private:
 			if (curr_score < 21 and curr_score > winning_score) {
 				winner = (*it)->GetID();
 				winning_score = (*it)->GetScore();
+				amount = (*it)->GetBet();
+
 			}
 		}
-		return winner;
+		return make_pair(winner, amount);
 	}
 
 	void StartGame() {
 		//dealer is the last
+		srand(0);
 		for (auto it = 0; it < num_of_players + 1; ++it) {
-			players.push_back(new Player(it+1));
+			players.push_back(new Player(it+1, rand()));
 		}
 	}
 public:
@@ -217,7 +223,7 @@ public:
 	}
 
 	
-	int Play() {
+	pair<int,int> Play() {
 		StartGame();
 		return PlayGame();
 	}
@@ -225,5 +231,5 @@ public:
 
 int main() {
 	BlackJack game1(5);
-	int winner = game1.Play();
+	pair<int, int> winner = game1.Play();
 }
