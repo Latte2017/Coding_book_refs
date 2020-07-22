@@ -33,12 +33,16 @@ public:
 		this->vehicle_number = vehicle_number;
 		this->type = type;
 	}
+
+	string GetVehicleNumber() {
+		return this->vehicle_number;
+	}
 };
 
 class ParkingSpot {
 private:
 	int floor;
-	string vehicle_number; //Vehicle number 
+	Vehicle* automobile; //Vehicle number 
 	ParkingSpotType spotType;
 
 public:
@@ -47,12 +51,21 @@ public:
 		this->spotType = spotType;
 	};
 
-	void Occupy(string vehicle_number) {
-		this->vehicle_number = vehicle_number;
+	void Occupy(Vehicle* automobile) {
+		this->automobile = automobile;
 	}
 
-	bool IsReserved(){
-		return !vehicle_number.empty();
+	bool IsReserved() {
+		return (automobile != nullptr);
+	}
+
+	ParkingSpotType GetSpotType() {
+		return this->spotType;
+	}
+
+	void Release() {
+		automobile = nullptr;
+		return;
 	}
 };
 
@@ -86,6 +99,19 @@ public:
 			return nullptr;
 		}
 	}
+
+	void ReleaseParking(ParkingSpotType type, ParkingSpot* spot) {
+		spot->Release();
+		types_of_parking[type].push_back(spot);
+	}
+
+	~ParkingFloor() {
+		for (auto it = types_of_parking.begin(); it != types_of_parking.end(); ++it) {
+			for (auto ix = (*it).second.begin(); ix != (*it).second.end(); ++ix) {
+				delete (*ix);
+			}
+		}
+	}
 	
 };
 
@@ -93,49 +119,49 @@ public:
 
 class Station {
 	int floor;
-	static map<int, Vehicle*> vehicle_ticket;
+	static map<int, pair<ParkingFloor*, ParkingSpot*>> vehicle_ticket;
 public:
 	Station(int floor) {
 		this->floor = floor;
 	}
 
-	int GetTicket(Vehicle* vehicle_id) {
+	int GetTicket(ParkingFloor* floor, ParkingSpot* spot) {
 		srand(0);
 		int ticket = int(rand() % 100000);
 		
 		while (vehicle_ticket.find(ticket) != vehicle_ticket.end()) {
+
 			ticket = int(rand() % 100000);
 		}
-		vehicle_ticket[ticket] = vehicle_id;
+		vehicle_ticket[ticket] = make_pair(floor, spot);
 		return int(ticket);
 	}
 
-	bool ReturnTicket(int ticket) {
+	pair< ParkingFloor*, ParkingSpot*> ReturnTicket(int ticket) {
 		if (vehicle_ticket.find(ticket) != vehicle_ticket.end()) {
+			auto ret_val = vehicle_ticket[ticket];
 			vehicle_ticket.erase(ticket);
-			return true;
+			return ret_val;
 		}
-		return false;
+		return make_pair(nullptr, nullptr);
 	}
+
+	
 };
 
-//Initialize the pointer to null
-ParkingLot* ParkingLot::instance = nullptr;
+map<int, pair<ParkingFloor*, ParkingSpot*>> Station::vehicle_ticket;
 
 //Use singleton pattern
 class ParkingLot {
 private:
-	static ParkingLot* instance;
 	vector<ParkingFloor*> all_floors;
 	vector<Station*> all_stations;
 	ParkingLot() {} //Private Constructor
 
 public:
-	static ParkingLot* getInstance() {
-		if (!instance) {
-			instance = new ParkingLot;
-			return instance;
-		}
+	static ParkingLot& getInstance() {
+		static ParkingLot instance;
+		return instance;
 	}
 
 	void AddParking(int num_floors, int num_spots=10) {
@@ -155,8 +181,9 @@ public:
 		all_stations.push_back(new Station(floor));
 	}
 
-	void IssueTicket(Vehicle vech, ParkingType vehicle_type, bool handicapped){
+	int EnterLot(Vehicle* vech, ParkingType vehicle_type, bool handicapped){
 		ParkingSpotType spot_type;
+		int ticket;
 		if (handicapped == true) {
 			spot_type = ParkingSpotType::handicapped;
 		}
@@ -164,25 +191,56 @@ public:
 			switch (vehicle_type) {
 			case (ParkingType::Car):
 				spot_type = ParkingSpotType::compact;
+				break;
 
 			case (ParkingType::Bus):
 				spot_type = ParkingSpotType::large;
-
+				break;
 
 			case (ParkingType::Motorbike):
 				spot_type == ParkingSpotType::motorbike;
+				break;
 			}
 		}
 
 		for (auto it = all_floors.begin(); it != all_floors.end(); ++it) {
-			if ((*it)->GetParkingSpots(spot_type)) {
-
+			ParkingSpot* spot = (*it)->GetParkingSpots(spot_type);
+			if (spot) {
+				ticket = all_stations.back()->GetTicket(*it, spot);
+				spot->Occupy(vech);
+				break;
 			}
 		}
+		return ticket;
+	}
+
+	bool ExitLot(int ticket) {
+		auto station1 = all_stations.back();
+		pair< ParkingFloor*, ParkingSpot*> p1 = station1->ReturnTicket(ticket);
+		/*
+		if (fl and spot) {
+			auto spot_type = spot->GetSpotType();
+			fl->ReleaseParking(spot_type, spot);
+			return true;
+		}
+		else {
+			return false;
+		}
+		*/
+		return true;
+	}
+
+	~ParkingLot() {
 	}
 };
 
 
 
-
-
+int main() {
+	ParkingLot p1 =  p1.getInstance();
+	Vehicle *v1 = new Vehicle("ABC", ParkingType::Car);
+	p1.AddParking(4);
+	int ticket = p1.EnterLot(v1, ParkingType::Car, false);
+	p1.ExitLot(ticket);
+	delete v1;
+}

@@ -40,6 +40,9 @@
     <Filter Include="Source Files\Chapter8">
       <UniqueIdentifier>{77ff1687-4a5f-446a-a4b6-ec7238cc2e61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter18">
+      <UniqueIdentifier>{6cfbf397-3179-4e24-9765-da454d0acd5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1_1.cpp">
@@ -240,10 +243,28 @@
     <ClCompile Include="8_4.cpp">
       <Filter>Source Files\Chapter8</Filter>
     </ClCompile>
+    <ClCompile Include="18_1.cpp">
+      <Filter>Source Files\Chapter18</Filter>
+    </ClCompile>
+    <ClCompile Include="18_2.cpp">
+      <Filter>Source Files\Chapter18</Filter>
+    </ClCompile>
+    <ClCompile Include="18_5.cpp">
+      <Filter>Source Files\Chapter18</Filter>
+    </ClCompile>
+    <ClCompile Include="18_6.cpp">
+      <Filter>Source Files\Chapter18</Filter>
+    </ClCompile>
+    <ClCompile Include="18_13.cpp">
+      <Filter>Source Files\Chapter18</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Missing.txt">
       <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="..\..\..\Downloads\words\words.txt">
+      <Filter>Source Files\Chapter18</Filter>
     </Text>
   </ItemGroup>
 </Project>
