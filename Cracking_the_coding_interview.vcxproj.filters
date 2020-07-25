@@ -46,9 +46,6 @@
     <Filter Include="Source Files\Cracking_theCoding_interview\Chapter18">
       <UniqueIdentifier>{6cfbf397-3179-4e24-9765-da454d0acd5e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Dynamic_programming_for_Coding_interview">
-      <UniqueIdentifier>{0b2bf004-9797-459a-a5b0-084a5da79c9c}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1_1.cpp">
