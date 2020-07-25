@@ -13,258 +13,267 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Chapter1">
+    <Filter Include="Source Files\Cracking_theCoding_interview">
+      <UniqueIdentifier>{35449f9c-6ccc-4c87-b442-bebd42028f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter1">
       <UniqueIdentifier>{dd4f2c27-509e-4efa-8962-eb0f7bf78336}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter2">
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter2">
       <UniqueIdentifier>{06d7d4e4-e8db-4e50-ac12-002e8c112115}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter3">
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter3">
       <UniqueIdentifier>{f2d3b695-7615-40db-a171-a99113ae9c72}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter4">
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter4">
       <UniqueIdentifier>{b7910c16-5ebe-406c-9a65-2b5d53005cce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter5">
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter5">
       <UniqueIdentifier>{43e2d97d-ea5c-45a8-a17d-ea3a2e4acdcc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter9">
-      <UniqueIdentifier>{520677de-6b88-492e-a330-3c7c808006a9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Chapter11">
-      <UniqueIdentifier>{114c012d-a381-4fa1-ae27-89a77a58b0b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Chapter17">
-      <UniqueIdentifier>{dd39de14-f813-4122-8d8b-3b7c607df49d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Chapter8">
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter8">
       <UniqueIdentifier>{77ff1687-4a5f-446a-a4b6-ec7238cc2e61}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter18">
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter9">
+      <UniqueIdentifier>{520677de-6b88-492e-a330-3c7c808006a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter11">
+      <UniqueIdentifier>{114c012d-a381-4fa1-ae27-89a77a58b0b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter17">
+      <UniqueIdentifier>{dd39de14-f813-4122-8d8b-3b7c607df49d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking_theCoding_interview\Chapter18">
       <UniqueIdentifier>{6cfbf397-3179-4e24-9765-da454d0acd5e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1_1.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="1_2.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="1_3.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="1_4.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="1_5.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="1_6.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="1_7.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="1_8.cpp">
-      <Filter>Source Files\Chapter1</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter1</Filter>
     </ClCompile>
     <ClCompile Include="2_1.cpp">
-      <Filter>Source Files\Chapter2</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="2_2.cpp">
-      <Filter>Source Files\Chapter2</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="2_3.cpp">
-      <Filter>Source Files\Chapter2</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="2_4.cpp">
-      <Filter>Source Files\Chapter2</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="2_5.cpp">
-      <Filter>Source Files\Chapter2</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="2_6.cpp">
-      <Filter>Source Files\Chapter2</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="2_7.cpp">
-      <Filter>Source Files\Chapter2</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="stack.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="queue.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="3_1.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="3_2.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="3_3.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="3_4.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="3_5.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="3_6.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="3_7.cpp">
-      <Filter>Source Files\Chapter3</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="4_1.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_2.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_3.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_4.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_5.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_6.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_7.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_8.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="4_9.cpp">
-      <Filter>Source Files\Chapter4</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter4</Filter>
     </ClCompile>
     <ClCompile Include="5_1.cpp">
-      <Filter>Source Files\Chapter5</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter5</Filter>
     </ClCompile>
     <ClCompile Include="5_2.cpp">
-      <Filter>Source Files\Chapter5</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter5</Filter>
     </ClCompile>
     <ClCompile Include="5_3.cpp">
-      <Filter>Source Files\Chapter5</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter5</Filter>
     </ClCompile>
     <ClCompile Include="9_1.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_2.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_3.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_4.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_5.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_6.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_7.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_8.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_9.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_10.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="9_11.cpp">
-      <Filter>Source Files\Chapter9</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter9</Filter>
     </ClCompile>
     <ClCompile Include="11_1.cpp">
-      <Filter>Source Files\Chapter11</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="11_2.cpp">
-      <Filter>Source Files\Chapter11</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="11_3.cpp">
-      <Filter>Source Files\Chapter11</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="11_5.cpp">
-      <Filter>Source Files\Chapter11</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="11_6.cpp">
-      <Filter>Source Files\Chapter11</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="11_7.cpp">
-      <Filter>Source Files\Chapter11</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="11_8.cpp">
-      <Filter>Source Files\Chapter11</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="17_1.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_2.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_5.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_3.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_4.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_6.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_7.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_8.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="17_13.cpp">
-      <Filter>Source Files\Chapter17</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter17</Filter>
     </ClCompile>
     <ClCompile Include="8_2.cpp">
-      <Filter>Source Files\Chapter8</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter8</Filter>
     </ClCompile>
     <ClCompile Include="8_1.cpp">
-      <Filter>Source Files\Chapter8</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter8</Filter>
     </ClCompile>
     <ClCompile Include="8_4.cpp">
-      <Filter>Source Files\Chapter8</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter8</Filter>
     </ClCompile>
     <ClCompile Include="18_1.cpp">
-      <Filter>Source Files\Chapter18</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
     </ClCompile>
     <ClCompile Include="18_2.cpp">
-      <Filter>Source Files\Chapter18</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
     </ClCompile>
     <ClCompile Include="18_5.cpp">
-      <Filter>Source Files\Chapter18</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
     </ClCompile>
     <ClCompile Include="18_6.cpp">
-      <Filter>Source Files\Chapter18</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
     </ClCompile>
     <ClCompile Include="18_13.cpp">
-      <Filter>Source Files\Chapter18</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
+    </ClCompile>
+    <ClCompile Include="18_11.cpp">
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Missing.txt">
-      <Filter>Source Files</Filter>
-    </Text>
     <Text Include="..\..\..\Downloads\words\words.txt">
-      <Filter>Source Files\Chapter18</Filter>
+      <Filter>Source Files\Cracking_theCoding_interview\Chapter18</Filter>
+    </Text>
+    <Text Include="Missing.txt">
+      <Filter>Source Files\Cracking_theCoding_interview</Filter>
     </Text>
   </ItemGroup>
 </Project>
